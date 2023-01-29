@@ -39,6 +39,14 @@ kubectl scale --replicas=6 replicaset nginx-replica-set
 
 <br/>
 
+## Edit the current running definition file of the ReplicaSet in the Kubernates Cluster
+
+```sh
+# This command will not update the original definition file.
+kubectl edit replicaset <REPLICA_SET_METADATA_NAME>
+kubectl edit replicaset nginx-replica-set
+```
+
 ## Delete the ReplicaSet in the Kubernates Cluster
 
 ```sh
