@@ -1,6 +1,6 @@
-# Kubernetes Commands - ReplicationSet
+# Kubernetes Commands - ReplicaSet
 
-Standard Kubernetes ReplicationSet related commands with examples
+Standard Kubernetes ReplicaSet related commands with examples
 
 <br/>
 
