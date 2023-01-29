@@ -42,10 +42,10 @@ kubectl delete pod nginx
 
 ```sh
 kubectl create -f <FILE_NAME>
-kubectl create -f definition/redis-k8.yaml
+kubectl create -f definition/redis-pod-k8.yaml
 
 kubectl apply -f <FILE_NAME>
-kubectl apply -f definition/redis-k8.yaml
+kubectl apply -f definition/redis-pod-k8.yaml
 ```
 
 <br/>

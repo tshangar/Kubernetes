@@ -10,5 +10,11 @@ Standard Kubernetes commands with examples
 
 <br/>
 
+## [Kubernetes Commands - ReplicationController](README-RC.md)
+
+<br/>
+
+## [Kubernetes Commands - ReplicaSet](README-RS.md)
+
 <br/>
 <br/>
