@@ -18,7 +18,7 @@ Standard Kubernetes commands with examples
 
 <br/>
 
-## [Kubernetes Commands - Depoyments](README-Deployments.md)
+## [Kubernetes Commands - Depoyments](README-Deployment.md)
 
 <br/>
 <br/>
