@@ -17,4 +17,8 @@ Standard Kubernetes commands with examples
 ## [Kubernetes Commands - ReplicaSet](README-RS.md)
 
 <br/>
+
+## [Kubernetes Commands - Depoyments](README-Deployments.md)
+
+<br/>
 <br/>
