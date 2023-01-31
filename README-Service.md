@@ -25,6 +25,13 @@ Standard Kubernetes Services related commands with examples.
 
 <br/>
 
+### Load Balancer
+
+- Exposes the Services provided by the Kubernetes Pod via the native Load Balancer in the Cloud platform.
+- On an unsupported Cloud Platform or On-premises environment this service will exactly like a NodePort.
+
+<br/>
+
 ## Create the Service in the Kubernates Cluster
 
 ```sh
