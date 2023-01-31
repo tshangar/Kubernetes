@@ -20,8 +20,9 @@ Standard Kubernetes Services related commands with examples.
 
 ### ClusterIP
 
-- Maps the internal Port of multiple Pods to a single Port and exposes that Port for other services to connect.
+- Maps the internal Port of one ore more same Pod(s) to a single Port and exposes that Port for internal services to connect.
 - Works as a default Load Balancer with the Random assignment algorithm.
+- ClusterIP is the default value for the spec type in Service definition file.
 
 <br/>
 
