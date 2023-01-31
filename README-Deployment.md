@@ -8,11 +8,11 @@ Standard Kubernetes Deployments related commands with examples
 
 ```sh
 kubectl create -f <FILE_NAME>
-kubectl create -f definitions/nginx-deployments-k8.yaml
+kubectl create -f definitions/deployments/nginx-deployment-k8.yaml
 
 # Record the cause of the change in the Kubernetes Cluster
 kubectl create -f <FILE_NAME> --record
-kubectl create -f definitions/nginx-deployments-k8.yaml --record=true
+kubectl create -f definitions/deployments/nginx-deployment-k8.yaml --record=true
 ```
 
 <br/>
@@ -39,7 +39,7 @@ kubectl get all
 # Update the definition file with differnt Container version and execute the below command.
 # Default behaviour is Rolling Update.
 kubectl apply -f <FILE_NAME>
-kubectl apply -f definitions/nginx-deployments-k8.yaml
+kubectl apply -f definitions/deployments/nginx-deployment-k8.yaml
 
 # Below command will not update the original deployment definition file.
 kubectl set image deployment/<DEPLOYMENT_NAME> <CONTAINER>=<CONTAINER>:<NEW_TAG>

@@ -8,7 +8,7 @@ Standard Kubernetes ReplicaSet related commands with examples
 
 ```sh
 kubectl create -f <FILE_NAME>
-kubectl create -f definitions/nginx-rs-k8.yaml
+kubectl create -f definitions/replicaset/nginx-deployment-k8.yaml
 ```
 
 <br/>
@@ -26,11 +26,11 @@ kubectl get replicaset
 ```sh
 # Update the ReplicaSet definion file with the new Replicas count and execute the below command.
 kubectl replace -f <FILE_NAME>
-kubectl replace -f definitions/nginx-rs-k8.yaml
+kubectl replace -f definitions/replicaset/nginx-deployment-k8.yaml
 
 # Use the below kubectl scale command with scale option. This command will not update the definition file.
 kubectl scale --replicas=<NEW_COUNT> -f <FILE_NAME>
-kubectl scale --replicas=6 -f definitions/nginx-rs-k8.yaml
+kubectl scale --replicas=6 -f definitions/replicaset/nginx-deployment-k8.yaml
 
 # Use the below kubectl scale command with scale option. This command will not update the definition file.
 kubectl scale --replicas=<NEW_COUNT> <TYPE> <REPLICA_SET_METADATA_NAME>

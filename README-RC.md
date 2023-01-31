@@ -8,7 +8,7 @@ Standard Kubernetes ReplicationController related commands with examples
 
 ```sh
 kubectl create -f <FILE_NAME>
-kubectl create -f definitions/nginx-rc-k8.yaml
+kubectl create -f definitions/replicationcontrollers/nginx-rc-k8.yaml
 ```
 
 <br/>
