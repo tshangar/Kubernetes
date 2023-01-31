@@ -1,15 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-service-nodeport
+  name: nginx-service-clusterip
   labels:
-    name: NginxServiceNodePort
+    name: NginxServiceClusterIP
     type: front-end
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
-    - nodePort: 3008  # Valid Range 30000 - 32767.
-      port: 80        # Port that is created on the Service to connect with Kubernetes Pod.
+    - port: 80        # Port that exposed for communication.
       targetPort: 80  # Port that is avaialbe on the Kubernetes Pod.
   selector:           # Labels from the Pod definion.
     name: Nginx

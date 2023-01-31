@@ -11,9 +11,16 @@ Standard Kubernetes Services related commands with examples.
 
 <br/>
 
-### Node Port
+### NodePort
 
 - Maps the internal Port of the Pod to the Kubernete Node in the Cluster.
+- Works as a default Load Balancer with the Random assignment algorithm.
+
+<br/>
+
+### ClusterIP
+
+- Maps the internal Port of multiple Pods to a single Port and exposes that Port for other services to connect.
 - Works as a default Load Balancer with the Random assignment algorithm.
 
 <br/>
