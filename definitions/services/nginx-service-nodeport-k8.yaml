@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service-nodeport
+  labels:
+    name: NginxServiceNodePort
+    type: front-end
+spec:
+  type: NodePort
+  ports:
+    - nodePort: 3008  # Valid Range 30000 - 32767
+      port: 80
+      targetPort: 80
+  selector:           # Labels from the Pod definion
+    name: Nginx
+    type: front-end
+      
